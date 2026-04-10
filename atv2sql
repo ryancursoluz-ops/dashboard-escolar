@@ -1,0 +1,25 @@
+DESCRIBE unidade;
+
+INSERT INTO unidade (nome, cep, cidade)
+VALUES ('Centro de atendimento socioeducativo', '75765-354', 'Formosa');
+
+INSERT INTO unidade (nome, cep, cidade) 
+VALUES ('Unidade Central de Apoio', '74003-010', 'Goiânia');
+
+INSERT INTO unidade (nome, cep, cidade) 
+VALUES ('Posto de Atendimento Norte', '75020-040', 'Anápolis');
+
+INSERT INTO unidade (nome, cep, cidade) 
+VALUES ('Centro Administrativo Sul', '75800-010', 'Jataí');
+
+INSERT INTO unidade (nome, cep, cidade) 
+VALUES ('Núcleo de Desenvolvimento Social', '75901-020', 'Rio Verde');
+
+INSERT INTO unidade (nome, cep, cidade) 
+VALUES ('Unidade Integrada Leste', '75110-330', 'Abadiânia');
+
+INSERT INTO unidade (nome, cep, cidade) 
+VALUES ('Posto Avançado de Serviços', '75650-000', 'Morrinhos');
+
+SELECT *
+FROM unidade;

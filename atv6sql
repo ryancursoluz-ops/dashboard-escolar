@@ -1,0 +1,41 @@
+-- SELECTS para treino e estudo de ORACLE
+
+-- SELECT BASIC
+SELECT owner, table_name 
+FROM all_tables 
+ORDER BY owner, table_name;
+
+
+SELECT cpf, first_name, cargo
+FROM func;
+
+-- SELECT COM WHERE
+SELECT cpf, first_name, cargo
+FROM func
+WHERE id_unidade = 23;
+
+SELECT cpf, first_name, cargo, salario
+FROM func
+WHERE salario > 5000 AND id_unidade = 23;
+
+-- SELECT COM DIVERSAS TABELA
+
+SELECT f.first_name, d.departamento, u.nome
+FROM func f
+JOIN departamentos d ON f.id_departamento = d.id_departamento
+JOIN unidade u ON f.id_unidade = u.id_unidade
+WHERE u.cidade = 'Luziânia';
+
+SELECT  f.cpf, f.last_name, f.cargo, f.salario
+        u.nome, ;
+
+SELECT *
+FROM  func f, departamentos d, unidade u;
+
+
+
+
+
+
+
+
